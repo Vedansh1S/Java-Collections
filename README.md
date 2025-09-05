@@ -1,18 +1,18 @@
-## Getting Started
+# Java Collections Overview
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository contains basic implementations and notes about some core data structures in Java.
 
-## Folder Structure
+## ArrayList
+- A **resizable array implementation** of the `List` interface.  
+- Provides fast **random access** (O(1) for get/set).  
+- Slower for **insertions and deletions** in the middle (O(n)).
 
-The workspace contains two folders by default, where:
+## LinkedList
+- A **doubly linked list implementation** of the `List` and `Deque` interfaces.  
+- Efficient for **insertions and deletions** (O(1) when position is known).  
+- Slower for **random access** compared to `ArrayList` (O(n)).
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Stack
+- A **last-in-first-out (LIFO)** data structure.  
+- In Java, implemented as a class that extends `Vector`.  
+- Supports basic operations like **push, pop, and peek**.
