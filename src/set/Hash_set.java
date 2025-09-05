@@ -2,7 +2,7 @@ package set;
 import java.util.Set; 
 import java.util.HashSet;
 
-public class Hash_set {
+public class Hash_Set {
     public static void main(String[] args) {
         Set<String> tags = new HashSet<>();
 

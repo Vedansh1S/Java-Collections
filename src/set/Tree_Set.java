@@ -31,7 +31,7 @@ public class Tree_Set {
         numbers.add(89);
         numbers.add(37);
 
-        numbers.add(12); // This will be ignored
+        numbers.add(12);
 
         System.out.println("Sorted TreeSet: " + numbers);
     }

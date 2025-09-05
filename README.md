@@ -16,3 +16,15 @@ This repository contains basic implementations and notes about some core data st
 - A **last-in-first-out (LIFO)** data structure.  
 - In Java, implemented as a class that extends `Vector`.  
 - Supports basic operations like **push, pop, and peek**.
+
+## HashSet
+- A collection that **stores unique elements**.  
+- Backed by a **hash table**.  
+- Offers constant-time performance for **add, remove, and contains** (O(1) average).  
+- Does **not maintain insertion order**.
+
+## TreeSet
+- A collection that **stores unique elements in sorted order**.  
+- Backed by a **Red-Black Tree**.  
+- Provides O(log n) performance for **add, remove, and contains**.  
+- Maintains elements in **ascending order** by default (can be customized with a comparator).

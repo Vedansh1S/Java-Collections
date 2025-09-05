@@ -26,7 +26,7 @@ public class Stack_tut {
         
         System.out.println("\nPressed the back button...");
         
-        System.out.println("Went back from: " + lastVisitedPage);
+        System.out.println("Went back from: " + lastVisitedPage);    
         System.out.println("Now on page: " + history.peek());
         System.out.println("\nIs history empty? " + history.empty());
     }

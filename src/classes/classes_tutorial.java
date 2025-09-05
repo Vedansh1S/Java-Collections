@@ -7,7 +7,7 @@ class student {
     public student(String name, int age) {
         this.name = name;
         this.age = age;
-        // can also be -> this.setAge(age); or this.setName(name);
+        // an also be this.setAge(age); or this.setName(name);
     }
 
     public void setName(String name) {
