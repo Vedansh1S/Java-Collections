@@ -10,18 +10,19 @@ public class Tree_Set {
         tags.add("Java");
         tags.add("Programming");
         tags.add("Collections");
+        tags.add("Python");
+        tags.add("C++");
 
         boolean isAdded = tags.add("Java"); // This will be ignored
 
-        System.out.println("\nWas the duplicate 'Java' tag added? " + isAdded); // false
-        System.out.println("Set of tags: " + tags); 
+        System.out.println("\n-> Was the duplicate 'Java' tag added? " + isAdded); // false
+        System.out.println("\n-> Set of tags: " + tags); 
 
         boolean hasProgramming = tags.contains("Programming");
-        System.out.println("Does the set contain 'Programming'? " + hasProgramming); 
+        System.out.println("\n-> Does the set contain 'Programming'? " + hasProgramming); 
 
         tags.remove("Collections");
-        System.out.println("Set after removing 'Collections': " + tags);
-        System.out.println();
+        System.out.println("\n-> Set after removing 'Collections': " + tags);
 
         // Example 2: TreeSet of Integers
         Set<Integer> numbers = new TreeSet<>();
@@ -33,7 +34,7 @@ public class Tree_Set {
 
         numbers.add(12);
 
-        System.out.println("Sorted TreeSet: " + numbers);
+        System.out.println("\n-> Sorted TreeSet: " + numbers);
     }
 
 }
