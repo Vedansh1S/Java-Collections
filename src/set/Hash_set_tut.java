@@ -3,7 +3,7 @@ package set;
 import java.util.Set;
 import java.util.HashSet;
 
-public class hashset_tut {
+public class Hash_set_tut {
     public static void main(String[] args) {
         Set<String> tags = new HashSet<>();
 
@@ -11,7 +11,7 @@ public class hashset_tut {
         tags.add("Programming");
         tags.add("Collections");
         tags.add("Python");
-            tags.add("C++");
+        tags.add("C++");
 
         boolean isAdded = tags.add("Java");
 
