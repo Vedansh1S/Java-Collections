@@ -14,9 +14,14 @@ public class AdvanceIterator {
             System.out.println(it.previous()); // backward
 
         // Add & Remove safely
-        //You're calling it.add(100) and then immediately calling it.remove(). According to the Java documentation, after calling add(), a remove operation cannot be performed until next() or previous() is called again. 
-        // That is why you get an IllegalStateException:> remove() can only be called once per call to next() or previous(), and only if neither add() nor remove() have been called after the last call to next or previous.
-        // Note: Order is important—do not call add() before remove(), or you will get the exception!
+        // You're calling it.add(100) and then immediately calling it.remove().
+        // According to the Java documentation, after calling add(), a remove operation
+        // cannot be performed until next() or previous() is called again.
+        // That is why you get an IllegalStateException:> remove() can only be called
+        // once per call to next() or previous(), and only if neither add() nor remove()
+        // have been called after the last call to next or previous.
+        // Note: Order is important—do not call add() before remove(), or you will get
+        // the exception!
 
         while (it.hasNext()) {
             Integer val = it.next();
@@ -34,7 +39,7 @@ public class AdvanceIterator {
             System.out.println(it.next()); // Not execute since we are at the last index.
 
         for (Integer item : list) {
-            System.out.println(item);     // ONLY reading, cannot safely remove
+            System.out.println(item); // ONLY reading, cannot safely remove
         }
         // -----------------------------------------------
 

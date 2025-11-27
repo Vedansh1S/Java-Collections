@@ -11,7 +11,7 @@ public class Linked_List {
         linkedList.add("Cat");
         linkedList.add("Dog");
 
-        System.out.println(linkedList); 
+        System.out.println(linkedList);
 
         // New LinkedList example
         LinkedList<String> playlist = new LinkedList<>();

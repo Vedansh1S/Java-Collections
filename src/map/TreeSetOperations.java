@@ -28,17 +28,19 @@ public class TreeSetOperations {
         int last = set.last();
 
         // 7. Lower, Higher, Floor, Ceiling
-        Integer lower = set.lower(15);   // < 15
+        Integer lower = set.lower(15); // < 15
         Integer higher = set.higher(15); // > 15
-        Integer floor = set.floor(15);   // ≤ 15
-        Integer ceil = set.ceiling(15);  // ≥ 15
+        Integer floor = set.floor(15); // ≤ 15
+        Integer ceil = set.ceiling(15); // ≥ 15
 
         // 8. Iterate
-        for (int x : set) System.out.println(x);
+        for (int x : set)
+            System.out.println(x);
 
         // 9. Reverse iteration
         Iterator<Integer> rev = set.descendingIterator();
-        while (rev.hasNext()) System.out.println(rev.next());
+        while (rev.hasNext())
+            System.out.println(rev.next());
 
         // 10. Subset view
         SortedSet<Integer> subset = set.subSet(5, 20); // from 5 to 19
@@ -64,4 +66,3 @@ public class TreeSetOperations {
         TreeSet<Integer> set2 = new TreeSet<>(arr);
     }
 }
-

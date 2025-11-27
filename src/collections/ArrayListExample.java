@@ -1,9 +1,10 @@
 package collections;
+
 import java.util.*;
 
 public class ArrayListExample {
-public static void main(String[] args) {
-    ArrayList<Integer> list = new ArrayList<>();
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
 
         // 2. Add elements
         list.add(10); // at end
@@ -18,8 +19,8 @@ public static void main(String[] args) {
         list.set(1, 25);
 
         // 5. Remove element
-        list.remove(0);        // by index
-        list.remove(Integer.valueOf(30));  // by value
+        list.remove(0); // by index
+        list.remove(Integer.valueOf(30)); // by value
 
         // 6. Size of list
         int size = list.size();
@@ -31,10 +32,12 @@ public static void main(String[] args) {
         boolean empty = list.isEmpty();
 
         // 9. Iterate List
-        for (int x : list) System.out.println(x); // for-each
-        list.forEach(System.out::println);        // lambda
-        Iterator<Integer> itr = list.iterator();  // using iterator
-        while (itr.hasNext()) System.out.println(itr.next());
+        for (int x : list)
+            System.out.println(x); // for-each
+        list.forEach(System.out::println); // lambda
+        Iterator<Integer> itr = list.iterator(); // using iterator
+        while (itr.hasNext())
+            System.out.println(itr.next());
 
         // 10. Clear list
         list.clear();
@@ -45,7 +48,7 @@ public static void main(String[] args) {
         list1.addAll(list2);
 
         // 12. Sorting
-        Collections.sort(list1);         // ascending
+        Collections.sort(list1); // ascending
         list1.sort(Collections.reverseOrder()); // descending
 
         // 13. Reverse list
@@ -55,7 +58,7 @@ public static void main(String[] args) {
         Integer[] arr = list1.toArray(new Integer[0]);
 
         // 15. Convert Array to ArrayList
-        Integer[] arr2 = {10, 20, 30};
+        Integer[] arr2 = { 10, 20, 30 };
         ArrayList<Integer> list3 = new ArrayList<>(Arrays.asList(arr2));
 
         // 16. Clone ArrayList (shallow copy)
@@ -90,7 +93,7 @@ public static void main(String[] args) {
         list3.removeIf(n -> n > 20);
 
         // 26. Index of element
-        int idx = list3.indexOf(10);     // first occurrence
+        int idx = list3.indexOf(10); // first occurrence
         int lastIdx = list3.lastIndexOf(10); // last occurrence
 
         // 27. ForEach with index
@@ -100,5 +103,5 @@ public static void main(String[] args) {
 
         // 28. Convert to LinkedList
         LinkedList<Integer> linkedList = new LinkedList<>(list3);
-}
+    }
 }

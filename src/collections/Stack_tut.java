@@ -4,12 +4,12 @@ import java.util.Stack;
 
 public class Stack_tut {
     public static void main(String[] args) {
-        
+
         Stack<Integer> stack = new Stack<>();
-        
+
         stack.push(1);
         stack.push(2);
-        
+
         System.out.println("The popped element is: " + stack.pop());
 
         // New Stack example
@@ -23,10 +23,10 @@ public class Stack_tut {
         System.out.println("Current page is: " + history.peek());
 
         String lastVisitedPage = history.pop();
-        
+
         System.out.println("\nPressed the back button...");
-        
-        System.out.println("Went back from: " + lastVisitedPage);    
+
+        System.out.println("Went back from: " + lastVisitedPage);
         System.out.println("Now on page: " + history.peek());
         System.out.println("\nIs history empty? " + history.empty());
     }

@@ -6,9 +6,9 @@ import java.util.Iterator;
 
 public class IteratorExample {
     public static void main(String[] args) {
-        
+
         ArrayList<String> fruits = new ArrayList<>();
-        
+
         fruits.add("Apple");
         fruits.add("Banana");
         fruits.add("Cherry");
@@ -19,7 +19,7 @@ public class IteratorExample {
 
         System.out.println("\n-> Iterating through the list of fruits:\n");
         while (iterator.hasNext()) {
-            
+
             String fruit = iterator.next();
             System.out.println("-> " + fruit);
 

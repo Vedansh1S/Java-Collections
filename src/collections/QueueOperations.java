@@ -40,7 +40,7 @@ public class QueueOperations {
             System.out.println(x);
         }
 
-         // 7. Clear queue
-         queue.clear();
+        // 7. Clear queue
+        queue.clear();
     }
 }

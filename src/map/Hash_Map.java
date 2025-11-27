@@ -20,13 +20,12 @@ public class Hash_Map {
         System.out.println("Alice's Score: " + aliceScore);
         System.out.println();
 
-
-        for (String key : studentScores.keySet()){
+        for (String key : studentScores.keySet()) {
             System.out.println("The keys are: " + key);
         }
         System.out.println();
 
-        for (Integer values : studentScores.values()){
+        for (Integer values : studentScores.values()) {
             System.out.println("The values are: " + values);
         }
 

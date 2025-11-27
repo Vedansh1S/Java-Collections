@@ -19,8 +19,9 @@ public class Tree_Set {
         System.out.println("\n-> Math Score: " + examScores.get("Math"));
         System.out.println();
 
-        for (Map.Entry<String,Integer> scores : examScores.entrySet()){
-            System.out.println("-> The key is: " + scores.getKey() + " and the respective value is " + scores.getValue());
+        for (Map.Entry<String, Integer> scores : examScores.entrySet()) {
+            System.out
+                    .println("-> The key is: " + scores.getKey() + " and the respective value is " + scores.getValue());
         }
         System.out.println();
     }

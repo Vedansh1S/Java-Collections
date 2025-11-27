@@ -21,12 +21,12 @@ public class HashMapOperations {
         boolean vExists = map.containsValue(30);
 
         // 5. Remove
-        map.remove("C");                  // by key
-        map.remove("A", 10);              // remove only if key-value matches
+        map.remove("C"); // by key
+        map.remove("A", 10); // remove only if key-value matches
 
         // 6. Replace/update value
         map.replace("B", 25);
-        map.put("B", 50);                 // also updates
+        map.put("B", 50); // also updates
 
         // 7. Size
         int size = map.size();
@@ -40,10 +40,12 @@ public class HashMapOperations {
         }
 
         // 10. Iterate keys
-        for (String key : map.keySet()) System.out.println(key);
+        for (String key : map.keySet())
+            System.out.println(key);
 
         // 11. Iterate values
-        for (Integer v : map.values()) System.out.println(v);
+        for (Integer v : map.values())
+            System.out.println(v);
 
         // 12. Use getOrDefault
         int val2 = map.getOrDefault("D", -1);
